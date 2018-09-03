@@ -24,10 +24,14 @@ LuciusWhite
 "nmap <silent> <LEFT>          :cprev<CR>
 "nmap <silent> <LEFT><LEFT>    :cpfile<CR><C-G>
 
-nmap <silent> <C-S-RIGHT>    :tabnext<CR>
-nmap <silent> <C-S-LEFT>     :tabprev<CR>
-nmap <silent> <C-S-UP>       :tabnew<CR>
-nmap <silent> <C-S-DOWN>     :tabclose<CR>
+"nmap <silent> <C-S-RIGHT>    :tabnext<CR>
+"nmap <silent> <C-S-LEFT>     :tabprev<CR>
+"nmap <silent> <C-S-UP>       :tabnew<CR>
+"nmap <silent> <C-S-DOWN>     :tabclose<CR>
+map <silent> <C-S-RIGHT>    <ESC><C-w>l
+map <silent> <C-S-LEFT>     <ESC><C-w>h
+map <silent> <C-S-UP>       <ESC>:vs<CR>
+map <silent> <C-S-DOWN>     <ESC>:q<CR>
 
 " Make :help appear in a full-screen tab, instead of a window
 "Only apply to .txt files...
